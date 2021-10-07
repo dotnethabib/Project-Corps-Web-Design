@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#container{
+background-color: red;
+width: 100%;
+height: 100%;
+}
+
+
+/* *****HEADER SECTION START HERE***** */
+
+.wrapper{
+  width: 100%;
+  height:15vh;
+  background-color: #35424A;
+  position: relative;
+}
+
+.wrapper::after{
+  content: " ";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(29, 13, 13);
+  position: absolute;
+  top: 100%;
+
+}
+
+.header{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#logo{
+  color:white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#logo_color{
+  color: red;
+}
+
+
+nav a{
+  /* background-color: rgb(201, 16, 16); */
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 16px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+nav a:first-of-type{
+color: red;
+}
+
+
+/* *****HEADER SECTION END HERE***** */
+
+
+
+ /* *****BACKGROUND SECTION START HERE*****  */
+  
+#background{
+  width: 100%;
+  height: 400px;
+  background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("img/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+ 
+
+
+ /* *****BACKGROUND SECTION END HERE*****  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* utility class */
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Query Start Here */
+
+@media only screen and (max-width: 300px) {
+  .container {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    /* background-color: green; */
+  }
+}
